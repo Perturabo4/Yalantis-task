@@ -1,0 +1,10 @@
+.month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: .3rem;
+    box-shadow: 2px 3px 5px rgba(0,0,0, .3);
+}

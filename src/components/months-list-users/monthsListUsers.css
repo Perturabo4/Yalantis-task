@@ -1,0 +1,31 @@
+.users-list {
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    top: -14px;
+    right: -110%;
+    list-style: none;
+    background: #fff;
+    border: 1px solid rgba(0,0,0, .5);
+    box-shadow: 2px 3px 5px rgba(0,0,0, .3);
+    z-index: 100;
+}
+
+.users-list:before {
+    content: "";
+    position: absolute;
+    left: -12%;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.users-list:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    border: 20px solid transparent;
+    border-right-color: #4c4c4c;
+}
