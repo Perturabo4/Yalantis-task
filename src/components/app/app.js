@@ -39,8 +39,6 @@ function App() {
 
         setState(monthsWithUsers);
 
-        console.log(monthsWithUsers);
-
       } catch (err) {
         console.error(err)
       }
