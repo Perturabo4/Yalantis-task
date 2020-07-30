@@ -4,15 +4,17 @@ import './monthsListUsers.css';
 
 const MonthsListUsers = ({users}) => {
     return (
-        <ul className='users-list'>
-            {users.map(({id, firstName, lastName}) => {
-               return  <MonthsListUsersItem 
-                    firstName={firstName} 
-                    lastName={lastName} 
-                    key={id}
-                />
-            })}
-        </ul>
+        <div className='users-list-wrapper'>
+            <ul className='users-list'>
+                {users.map(({id, firstName, lastName}) => {
+                return  <MonthsListUsersItem 
+                        firstName={firstName} 
+                        lastName={lastName} 
+                        key={id}
+                    />
+                })}
+            </ul>
+        </div>
     )
 }
 

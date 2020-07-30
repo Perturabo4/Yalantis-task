@@ -1,17 +1,31 @@
-.users-list {
-    position: absolute;
-    width: 100%;
-    padding: 5px;
-    top: -14px;
-    right: -110%;
-    list-style: none;
-    background: #fff;
-    border: 1px solid rgba(0,0,0, .5);
-    box-shadow: 2px 3px 5px rgba(0,0,0, .3);
-    z-index: 100;
+.month:last-child .users-list-wrapper:after,
+.month:last-child .users-list-wrapper {
+    top: initial;
+    bottom: 0;
 }
 
-.users-list:before {
+.users-list-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: -110%;
+    background: #fff;
+    border: 1px solid rgba(0,0,0, .5);
+    border-radius: 4px;
+    box-shadow: 2px 3px 5px rgba(0,0,0, .3);
+    z-index: 100;
+    color: #4c4c4c;
+}
+
+.users-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.users-list-wrapper:before {
     content: "";
     position: absolute;
     left: -12%;
@@ -21,7 +35,7 @@
     z-index: -1;
 }
 
-.users-list:after {
+.users-list-wrapper:after {
     content: "";
     position: absolute;
     top: 0;
